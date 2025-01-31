@@ -1,28 +1,34 @@
 
 import './App.css';
 
-import { Button } from "react-bootstrap"; 4.2k (gzipped: 1.09k) 
+import { Button } from "react-bootstrap"; 
 import defaultTodos from "./data.ts";
 
-import TodoList from "./components/TodoList
-
-
+import TodoList from "./components/TodoList";
+import { useState } from 'react';
 
 function App() {
-   return (
-    <>
-      <div>
-       
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+   const addTodo = () =>  {
+      const newTodo = {
+        id: TodoList.length + 1,
+        title: "New Todo",
+        completed: false,
+      };
 
-export default App
+      setTodos{[...todos, newTodo]}; 
+    };
+  }
+  
+const toggleComplete 
+
+   [Todos, setTodos] = useState(defaultTodos);
+
+
+return 
+   {
+   <div className ="container">
+       <h1>Todo App Example </h1>
+        <Button className='mt-2 mb-2'>add Todo</Button>
+    }
+
+export default App;
